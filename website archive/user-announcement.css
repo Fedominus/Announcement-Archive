@@ -1,0 +1,172 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(JetBrainsMono.ttf);
+}
+
+* {
+  --main-color: #555184;
+  --second-color: #d6cfe3;
+  --text-color: #fee9ce;
+  --color2: #fffcf5;
+  --color3: #f7f3ff;
+}
+/* ---------------------ANNOUNEMENT SECTION---------------------- */
+#announcement-board {
+  background-color: var(--second-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 80%;
+  box-shadow: 0 2px 5px;
+}
+#announcement-board h2 {
+  margin: 0 0 1rem 0;
+}
+
+#announcement-board .add-ann {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#announcement-board .add-ann img {
+  width: 0.8rem;
+}
+#announcement-board .add-ann button {
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color: var(--color3);
+  font-size: 1rem;
+  font-family: JetBrainsMono;
+  border: none;
+  box-shadow: 2px 3px 3px var(--main-color);
+  margin-bottom: 1rem;
+}
+#announcement-board .add-ann button:hover {
+  color: var(--color2);
+  background-color: var(--main-color);
+  border: 1px solid var(--color3);
+  cursor: pointer;
+}
+#announcement-board .add-ann button:active {
+  color: var(--main-color);
+  background-color: var(--second-color);
+  border: 1px solid black;
+}
+#announcement-board .scroll-box {
+  height: 90%;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) var(--color2);
+}
+#announcement-board .board {
+  box-shadow: 0 0 10px var(--main-color);
+  background-color: var(--text-color);
+  height: auto;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--main-color);
+  margin: 0 0 1rem;
+}
+#announcement-board .board h3 {
+  margin: 0 0 0.7rem 0;
+}
+
+#announcement-board .board div {
+  background-color: var(--color2);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--main-color);
+}
+
+/*JS PART*/
+.hidden {
+display: none;
+}
+
+#hidden {
+display: none;
+}
+/*end*/
+
+#formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formInputs{
+margin: 5px;
+}
+
+#textBox{
+  width: 90%;
+  padding: 5px;
+  font-family: JetBrainsMono;
+  overflow-y: auto;
+}
+
+#cancelBtn{
+  width: 30%;
+  padding: 5px;
+  border-radius: 1rem;
+  border: none;
+  background-color: #555184;
+  font-family: JetBrainsMono;
+}
+
+#cancelBtn:hover{
+  background-color: hsla(245, 24%, 42%, 0.607);
+}
+
+#addA{
+   width: 30%;
+  padding: 5px;
+  border-radius: 1rem;
+  border: none;
+  background-color: #555184;
+  font-family: JetBrainsMono;
+}
+
+#addA:hover{
+  background-color: hsla(245, 24%, 42%, 0.607);
+}
+
+/* Styling para sa announcement board */
+.board {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.board h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.board .container {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.board p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.board small {
+    color: #888;
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+}
+
+.scroll-box {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}

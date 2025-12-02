@@ -1,0 +1,143 @@
+* {
+  --main-color: #555184;
+  --second-color: #d6cfe3;
+  --text-color: #fee9ce;
+  --color2: #fffcf5;
+  --color3: #f7f3ff;
+}
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(JetBrainsMono.ttf);
+}
+
+h1, h3, p {
+    margin: 0;
+}
+body {
+    background: url(images/purple-bg.jpg) no-repeat center center/cover;
+}
+/* --------------LOGIN PAGE-------------- */
+
+#login-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* LOGIN HEADER */
+main .login-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    padding-right: 2rem;
+    border-radius: 10px 10px 0 0;
+    color: var(--color2);
+}
+main .login-header img {
+    width: 15rem;
+}
+
+/* LOGIN PAGE */
+main .login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color3);
+    border-radius: 0 0 10px 10px;
+    gap: 1rem;
+}
+main .login-page div {
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+}
+
+main .login-page img {
+    padding-bottom: 0.2rem;
+}
+
+main .login-page input {
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    font-family: JetBrainsMono;
+    border-radius: 5px;
+    border-color: var(--main-color);
+}
+
+main .login-page #sign-in {
+    font-family: JetBrainsMono;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border-color: var(--main-color);
+    background-color: var(--text-color);
+    padding: 0.4rem 1rem;
+}
+main .login-page #sign-in:hover {
+    border-color: var(--text-color);
+    background-color: var(--color2);
+    cursor: pointer;
+    color: var(--main-color);
+}
+main .login-page #sign-in:active {
+    background-color: var(--second-color);
+}
+main .login-page div img {
+    width: 1.2rem;
+    align-self: center;
+}
+
+main .login-page .sign-up a {
+    text-decoration: none;
+}
+
+main .login-page .sign-up a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#toggle{
+    position: absolute;
+    transform: translateX(21rem);
+    cursor: pointer;
+    user-select: none;
+    color: blue;
+}
+
+#requirements {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 10px;
+margin-top: 10px;
+background-color: #fafafa;
+display: none; 
+position: absolute;
+transform: translate(25rem, 3rem);
+}
+
+#requirements ul {
+list-style: none;
+padding: 0%;
+margin: 0%;
+}
+
+#requirements li {
+margin: 5px 0;
+font-size: 14px;
+}
+
+.valid {
+color: green;
+}
+
+.invalid{
+color: red;
+}

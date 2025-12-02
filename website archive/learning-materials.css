@@ -1,0 +1,189 @@
+* {
+    --main-color: #555184;
+    --second-color: #d6cfe3;
+    --text-color: #fee9ce;
+    --color2: #fffcf5;
+    --color3: #f7f3ff;
+}
+
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(JetBrainsMono.ttf);
+}
+
+/* ---------------------LM SECTION---------------------- */
+#learning-material {
+    background-color: var(--second-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 0 2px 5px;
+}
+
+#learning-material .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#learning-material h2 {
+    margin: 0;
+    align-self: center;
+}
+
+#learning-material #container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#learning-material #container label {
+    font-size: 0.8rem;
+}
+
+#learning-material #container .course {
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--color2);
+    font-family: JetBrainsMono;
+}
+
+#learning-material #container .course:hover {
+    background-color: var(--main-color);
+    color: var(--color2);
+}
+
+#learning-material #container .course:focus {
+    background-color: var(--color3);
+    color: black;
+}
+
+#learning-material .content-div {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--text-color);
+    border-radius: 0.2rem;
+    border: 1px solid var(--main-color);
+}
+
+#learning-material .scroll-box {
+    margin-top: 0.8rem;
+    height: 90%;
+    overflow-y: auto;
+    padding-right: 0.3rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) var(--color2);
+}
+#learning-material .content-div #add-file {
+    display: flex;
+    justify-content: center;
+    
+}
+#learning-material .content-div #add-file img {
+    width: 1.5rem;
+}
+#learning-material .content-div #add-file button{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    background-color: var(--color2);
+    gap: 1rem;
+    font-family: JetBrainsMono;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px;
+}
+#learning-material .content-div #add-file button:hover {
+    background-color: var(--main-color);
+    color: var(--color2);
+    cursor: pointer;
+}
+#learning-material .content-div #add-file button:active {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+#learning-material .content-div div {
+    background-color: var(--color2);
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+#learning-material .content-div div img {
+    width: 3rem;
+}
+
+
+
+.material-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.material-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.material-info {
+    flex: 1;
+}
+
+.material-info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.material-info .subject {
+    color: #666;
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.material-info .date {
+    color: #888;
+    margin: 0;
+    font-size: 13px;
+}
+
+.material-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background: #45a049;
+}
+
+.no-materials {
+    text-align: center;
+    padding: 50px;
+    color: #666;
+    font-size: 18px;
+}
